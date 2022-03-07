@@ -1,7 +1,10 @@
 body {
     background-color: #F9FAFC;
     font-family: 'Roboto', sans-serif;
+    color: #4A4A4F;
 }
+
+/* Navigation */
 
 .navbar-brand {
     font-family: 'Pacifico', cursive;
@@ -14,4 +17,19 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
+}
+
+
+/* Footer */
+
+.dark-bg {
+    background-color: #445261;
+}
+
+a { color: inherit; } 
+
+.footer-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
