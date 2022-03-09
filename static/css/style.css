@@ -108,3 +108,27 @@ a { color: inherit; }
 .page-link {
     color: #E84610;
 }
+
+/* Account Sign-Up */
+
+.btn-signup {
+    background-color: #518ea6;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #518ea6;
+}
+
+.link {
+    color: #518ea6;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
