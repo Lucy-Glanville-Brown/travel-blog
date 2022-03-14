@@ -70,7 +70,7 @@ a { color: inherit; }
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 25%;
     width: 100%;
 }
 
@@ -78,6 +78,8 @@ a { color: inherit; }
     background-color: #445261;
     color: white;
     position: relative;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
 }
 
 .masthead-image {
@@ -88,14 +90,9 @@ a { color: inherit; }
 .masthead-image:after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 90%;
     height: 100%;
     width: 150%;
     background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
     z-index: 100;
 }
 
@@ -121,6 +118,8 @@ a { color: inherit; }
     background-color: #fff;
     color: #518ea6;
 }
+
+
 
 .link {
     color: #518ea6;
