@@ -1,3 +1,4 @@
+from .views import PostCreateView
 from . import views
 from django.urls import path
 
