@@ -170,3 +170,11 @@ a { color: inherit; }
     background: transparent;
     border: none;
 }
+
+/* Post Form */
+
+.post-form {
+    border: 4px solid #6698d9;
+    background-color: white;
+    width: 80%;
+}
