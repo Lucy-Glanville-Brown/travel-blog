@@ -3,7 +3,9 @@ from django.views import generic, View
 from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
+from django.contrib.messages.views import SuccessMessageMixin
+from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
@@ -83,7 +85,9 @@ class PostLike(View):
 class PostCreateView(CreateView):
     model = Post
     template_name = 'post_form.html'
-    fields = ['title', 'content']
+    fields = ['title', 'slug', 'content', 'featured_image', 'excerpt']
+    success_url = reverse_lazy('home')
+    success_message = 'New post created successfully and awaiting authorisation'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
