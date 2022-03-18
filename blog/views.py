@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views import generic, View
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostForm
@@ -82,7 +83,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
     template_name = 'post_form.html'
     fields = ['title', 'slug', 'content', 'featured_image', 'excerpt']
@@ -92,3 +93,21 @@ class PostCreateView(CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Post
+    template_name = 'post_form.html'
+    fields = ['title', 'slug', 'content', 'featured_image', 'excerpt']
+    success_url = reverse_lazy('home')
+    success_message = 'Post has been updated successfully and awaiting authorisation'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
