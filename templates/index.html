@@ -27,10 +27,10 @@
     <!-- Blog Entries Column -->
     <div class="row">
         <div class="col-12 mt-3 left">
-            <div class="row">
+            <div class="row d-flex">
             {% for post in post_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4 post">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
