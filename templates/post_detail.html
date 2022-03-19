@@ -34,6 +34,15 @@
                     <p class="card-text ">
                         {{ post.content | safe }}
                     </p>
+                    <!-- The Edit and Delete buttons will show if the user is the author of the post-->
+                    {% if user.id == post.author.id %}
+                        <div class="row mt-3 mb-3">
+                            <div class="d-grid gap-4 d-md-flex">
+                                <a class="btn btn-signup right" href="{% url 'post-update' post.slug %}" role="button">Edit</a>
+                                <a class="btn btn-danger right" href="{% url 'post-delete' post.slug %}" role="button">Delete</a>
+                            </div>
+                        </div>
+                    {% endif %}
                     <div class="row">
                         <div class="col-1">
                             <!-- The number of likes goes before the closing strong tag -->
