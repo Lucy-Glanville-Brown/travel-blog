@@ -12,7 +12,7 @@
                     </fieldset>
                     <div class="form-group">
                         <button class="btn btn-danger right" type="submit">Delete</button>
-                        <a class="btn btn-signup right" href="{% url 'post_detail' object.id %}">Cancel</a>
+                        <a class="btn btn-signup right" href="{% url 'post_detail' post.slug %}">Cancel</a>
                     </div>
                 </form>
             </div>
