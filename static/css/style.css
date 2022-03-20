@@ -76,6 +76,25 @@ a { color: inherit; }
     text-transform: uppercase;
 }
 
+.post-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.post-link:hover {
+    color: #E84610;
+}
+
+.page-link {
+    color: #07668c;
+    font-weight: 700;
+}
+
+.page-link:hover {
+    background-color: #07668c;
+    color: white;
+}
+
 /* Post Detail View */
 
 .post-detail {
@@ -118,16 +137,6 @@ a { color: inherit; }
     width: 150%;
     background: #367BA1;
     z-index: 100;
-}
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
 }
 
 /* Account Sign-Up, Login and Logout */
