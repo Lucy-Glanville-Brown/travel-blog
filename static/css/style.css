@@ -46,6 +46,7 @@ a { color: inherit; }
 .post {
     min-height: 40vh;
     max-height: 60vh;
+    width: 100%;
 }
 
 .card {
