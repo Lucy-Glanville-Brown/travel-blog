@@ -58,8 +58,8 @@ a { color: inherit; }
     position: relative;
 }
 
-.card-img-top {
-    height: 20vh;
+.card-img-top {    
+    max-height: 35vh;
 }
 
 .image-flash {
@@ -164,6 +164,7 @@ a { color: inherit; }
 .btn-signup:active {
     background-color: #fff;
     color: #07668C;
+    border: 2px solid #07668C;
 }
 
 /* Link and Likes */
