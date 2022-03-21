@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'cloudinary_storage',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles', # if only using media files this should be first
     'cloudinary',
     'django_summernote',
     'crispy_forms',
@@ -156,12 +156,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dvyrsxq7k',
-    'API_KEY': '919584248779198',
-    'API_SECRET': 'beEqH0yjhiMZl7b014LPT5MQV6E',
-}
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
 
