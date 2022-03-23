@@ -7,6 +7,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from .models import Post
 from .forms import CommentForm, PostForm
+from django.contrib import messages
 
 
 
@@ -129,7 +130,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
         return False
 
 
-class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, DeleteView):
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView, SuccessMessageMixin):
     """ 
     View for deleting a post. 
     """
@@ -138,8 +139,14 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
     success_url = reverse_lazy('home')
     success_message = 'Post has been deleted successfully'
 
+    """ function to check if the user is the post author """
     def test_func(self):
         post = self.get_object()
         if self.request.user == post.author:
             return True
         return False
+
+    """ function to display the message after post deleted """
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(PostDeleteView, self).delete(request, *args, **kwargs)
