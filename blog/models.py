@@ -5,6 +5,9 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 
 class Post(models.Model):
+    """
+    Class for the Post model. 
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
@@ -17,6 +20,9 @@ class Post(models.Model):
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
     class Meta:
+        """
+        Class to order in descending order. 
+        """
         ordering = ['-created_on']
 
     def __str__(self):
@@ -26,7 +32,9 @@ class Post(models.Model):
         return self.likes.count()
 
 class Comment(models.Model):
-
+    """
+    Class for the comment model.
+    """
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=80)
     email = models.EmailField()
@@ -35,8 +43,10 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
+        """ 
+        Class for ordering comments by ascending order. 
+        """
         ordering = ['created_on']
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
-
