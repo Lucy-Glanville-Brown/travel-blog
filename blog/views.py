@@ -10,6 +10,7 @@ from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
+    """ View for index.html displaying posts. """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
@@ -17,6 +18,7 @@ class PostList(generic.ListView):
     
 
 class PostDetail(View):
+    """ View for individual post page """
 
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -71,7 +73,8 @@ class PostDetail(View):
 
 
 class PostLike(View):
-
+    """ View to display likes to the user. """
+    
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -84,6 +87,7 @@ class PostLike(View):
 
 
 class PostCreateView(LoginRequiredMixin, CreateView):
+    """ View for creating a new post """
     model = Post
     template_name = 'post_form.html'
     fields = ['title', 'slug', 'content', 'featured_image', 'excerpt']
@@ -96,6 +100,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """ View for updating/editing a post."""
     model = Post
     template_name = 'post_form.html'
     fields = ['title', 'slug', 'content', 'featured_image', 'excerpt']
@@ -114,6 +119,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """ View for deleting a post. """
     model = Post
     template_name = 'post_confirm_delete.html'
     success_url = reverse_lazy('home')
