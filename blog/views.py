@@ -93,7 +93,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class PostCreateView(LoginRequiredMixin, CreateView):
+class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     """ 
     View for creating a new post 
     """
@@ -108,7 +108,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, UpdateView):
     """ 
     View for updating/editing a post.
     """
@@ -116,7 +116,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     template_name = 'post_form.html'
     fields = ['title', 'slug', 'content', 'featured_image', 'excerpt']
     success_url = reverse_lazy('home')
-    success_message = 'Post has been updated successfully and awaiting authorisation'
+    success_message = 'Post has been updated successfully'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
@@ -129,13 +129,14 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return False
 
 
-class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, DeleteView):
     """ 
     View for deleting a post. 
     """
     model = Post
     template_name = 'post_confirm_delete.html'
     success_url = reverse_lazy('home')
+    success_message = 'Post has been deleted successfully'
 
     def test_func(self):
         post = self.get_object()
