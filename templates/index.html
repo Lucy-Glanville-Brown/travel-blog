@@ -36,7 +36,7 @@
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" alt="whitsundays beach" src="https://res.cloudinary.com/dvyrsxq7k/image/upload/v1646681060/static/media/whitsundays_2_smohgy.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
