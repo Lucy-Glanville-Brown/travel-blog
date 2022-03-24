@@ -2,6 +2,7 @@
 
 ## Portfolio Project 4 - Code Institute
 
+Wunderlust is a travel blog and community where anyone who loves to travel can view and share their travel stories. The content of the posts are based on places I have been lucky enough to visit and I wanted to include some of my highlights to draw the users in.
 
 View the live project [here](https://wunderlust2022.herokuapp.com/)
 
