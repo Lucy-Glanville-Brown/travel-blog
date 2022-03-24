@@ -4,6 +4,9 @@
 
 Wunderlust is a travel blog and community where anyone who loves to travel can view and share their travel stories. The content of the posts are based on places I have been lucky enough to visit and I wanted to include some of my highlights to draw the users in.
 
+![image](https://user-images.githubusercontent.com/85178695/160018315-9e287f2e-5f27-43ba-a553-9a92be80514f.png)
+
+
 View the live project [here](https://wunderlust2022.herokuapp.com/)
 
 ## UX
@@ -48,6 +51,13 @@ The wire frames were created using Balsamiq.
 #### Images
 
 #### Colours
+
+![adobe_color_theme_11](https://user-images.githubusercontent.com/85178695/160018401-68c53e47-940d-45bf-9bea-5e14c31f8d76.png)
+
+![color_theme_11](https://user-images.githubusercontent.com/85178695/160018447-fc0ad0c6-2f5c-4bd4-bf0a-125d547f998b.png)
+
+![color_space_1](https://user-images.githubusercontent.com/85178695/160018530-090d5379-aa9c-4c5c-a7cf-f7204f86153e.png)
+
 
 #### Typography
 
