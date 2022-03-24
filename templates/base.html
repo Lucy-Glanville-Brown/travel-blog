@@ -98,13 +98,16 @@
         aria-label="Visit our Instagram (Opens in a new tab)"><i class="fab fa-instagram-square ms-3"></i></a>
 
   </footer>
+  {% block js %}
   <script>
-    setTimeout(function () {
-        let messages = document.getElementById("msg");
-        let alert = new bootstrap.Alert(messages);
-        alert.close();
-    }, 3000);
+    let = messages = document.getElementById("msg");
+      if (messages) {
+        setTimeout(function () {
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 3000);
+      }
   </script>
-
+  {% endblock %}
 </body>
 </html>
