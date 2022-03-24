@@ -100,7 +100,7 @@ class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     """
     model = Post
     template_name = 'post_form.html'
-    fields = ['title', 'slug', 'content', 'featured_image', 'excerpt']
+    fields = ['title', 'content', 'featured_image', 'excerpt']
     success_url = reverse_lazy('home')
     success_message = 'New post created successfully and awaiting authorisation'
 
@@ -115,7 +115,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
     """
     model = Post
     template_name = 'post_form.html'
-    fields = ['title', 'slug', 'content', 'featured_image', 'excerpt']
+    fields = ['title', 'content', 'featured_image', 'excerpt']
     success_url = reverse_lazy('home')
     success_message = 'Post has been updated successfully'
 
