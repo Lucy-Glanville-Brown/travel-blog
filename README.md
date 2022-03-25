@@ -36,13 +36,24 @@ View the live project [here](https://wunderlust2022.herokuapp.com/)
 *  As a Site User I can edit comments on a post so that I can make corrections to my comments
 *  As a Site User I can update my profile so that other users can view my details
 
+I used GitHub Projects to create a Kanban board to manage the planning and implementation of the functionality I wanted to include in this project. Click [here]('https://github.com/Lucy-Glanville-Brown/travel-blog/projects?type=beta') to see my project board.
+
 ![Travel Blog Kanban Board](https://user-images.githubusercontent.com/85178695/160198378-e2020da0-b249-4bdf-9bd8-fd35fdafbe39.png)
 
 ### Strategy
 
+I wanted to create a platform where users can share their travel stories and is aimed at anyone who has a love of travel. 
+* People who have been travelling
+* People looking to go travelling
+* Anyone with a love of travel
+
 ### Scope
 
+For the users I wanted to provide them with easy naviagation and a brief introduction to the site and eye catching images for the posts. The site has responsive design so should function correctly across various devices such as, Mobiles, Tablet, Laptop and Desktop.
+
 ### Structure
+
+This site has been designed with simplicity in mind, each page only has key information on it so that the user can find what they want quickly. 
 
 ### Skeleton
 The wire frames were created using Balsamiq.
@@ -53,31 +64,35 @@ The wire frames were created using Balsamiq.
 
 #### Pixabay
 
-[Whitsunday Island]('https://pixabay.com/photos/whitsunday-island-great-barrier-reef-796006/')
+Whitsunday Island image can be found on Pixabay [here]('https://pixabay.com/photos/whitsunday-island-great-barrier-reef-796006/')
+
 ![whitsunday-island-796006_1920](https://user-images.githubusercontent.com/85178695/160196050-976051b0-2e47-4b6f-8dfa-fd63c07d600b.jpg)
 
 
-[White Temple]('https://pixabay.com/photos/chiang-rai-thailand-white-temple-2371951/')
+White Temple image can be found on Pixabay [here]('https://pixabay.com/photos/chiang-rai-thailand-white-temple-2371951/')
+
 ![chiang-rai-2371951_1920](https://user-images.githubusercontent.com/85178695/160196076-c7abd774-bdb2-4196-ba5f-c91bb5122d13.jpg)
 
 
-[Angkor Wat]('https://pixabay.com/photos/angkor-wat-water-temple-city-425689/')
+Angkor Wat image can be found on Pixabay [here]('https://pixabay.com/photos/angkor-wat-water-temple-city-425689/')
 
 ![angkor-wat-425689_1920](https://user-images.githubusercontent.com/85178695/160196135-08aeff39-ec00-4cd6-a83c-2e72a6920b8a.jpg)
 
 
-[Hoi Ann, Lanterns]('https://pixabay.com/photos/market-lamps-light-person-hoi-an-2494520/')
-![market-2494520_1920](https://user-images.githubusercontent.com/85178695/160196153-3d8d43ab-824f-42fc-9542-bd6a6561b5bd.jpg)
+Hoi An Lanterns image can be found on Pixabay [here]('https://pixabay.com/photos/market-lamps-light-person-hoi-an-2494520/')
 
+![market-2494520_1920](https://user-images.githubusercontent.com/85178695/160196153-3d8d43ab-824f-42fc-9542-bd6a6561b5bd.jpg)
 
 
 #### Vecteezy
 
-[Ha Long Bay]('https://www.vecteezy.com/photo/2055163-coastal-rocks-and-blue-water')
+Ha Long Bay image can be found on Vecteezy [here]('https://www.vecteezy.com/photo/2055163-coastal-rocks-and-blue-water')
 
 ![vecteezy_coastal-rocks-and-blue-water_2055163](https://user-images.githubusercontent.com/85178695/160196191-cb64ca62-cd9c-4660-b2c6-9f78047c0542.jpg)
 
 #### My Photos
+These are my own photographs taken whilst travelling.
+
 Default Image
 
 ![whitsundays_2](https://user-images.githubusercontent.com/85178695/160196259-aa4bda18-5ac3-4a6d-a72d-9f0b5b46b47e.jpg)
@@ -109,6 +124,8 @@ I also used colorspace to search for other shades that worked well with the Navb
 
 
 #### Typography
+
+I decided to use ‘Pacifico’ for the Wunderlust branding and ‘Roboto’ and sans-serif for the remaining text.
 
 ## Technologies
 
@@ -245,6 +262,10 @@ I also used colorspace to search for other shades that worked well with the Navb
 
 ### Future Features
 
+* Edit comments
+* Delete comments
+* User profiles
+
 ## Testing
 
 I have manually tested this project by doing the following:
@@ -367,15 +388,27 @@ As a Site Admin I can delete posts so that I can remove them if I want to
 
 ### Bugs
 
+* When the user submits a comment and the page reloads you have to scroll down to see the message "Your comment is awaiting approval"
+
+* When the user edits a post the bootstrap class properties appear in the content box, this has also been flagged in the HTML validator testing for the post_detail page
+
 ### Validator Testing
 
 * W3C Markup Validation
 
+I have tested the home, register, login, sign out, new post, edit post and delete post pages with no errors returned. 
+
 ![html](https://user-images.githubusercontent.com/85178695/160198004-944c0af7-565b-4b76-987a-c9026e0ebbd5.png)
+
+The post_detail page has an error relating to the bootstrap class card-text, which is also causing a bug in the edit post page
 
 ![html_post_detail](https://user-images.githubusercontent.com/85178695/160198055-4e108688-70c4-44ff-ba9c-b0272e5fc9ec.png)
 
+Page Source code
+
 ![html_post_detail_page_source](https://user-images.githubusercontent.com/85178695/160198062-757a5cd9-2f4a-4db2-8a21-da1552957bde.png)
+
+My code
 
 ![html_post_detail_my_code](https://user-images.githubusercontent.com/85178695/160198065-25a21fbe-5059-491f-b9b7-366d78384b9f.png)
 
