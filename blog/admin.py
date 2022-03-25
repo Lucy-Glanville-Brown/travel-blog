@@ -18,7 +18,8 @@ class PostAdmin(SummernoteModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     """
-    Class that populates fields when creating a comment in the Django Admin Panel.
+    Class that populates fields when creating a comment in the
+    Django Admin Panel.
     """
     list_display = ('name', 'body', 'post', 'created_on', 'approved')
     list_filter = ('approved', 'created_on')

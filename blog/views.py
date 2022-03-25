@@ -10,20 +10,19 @@ from .forms import CommentForm, PostForm
 from django.contrib import messages
 
 
-
 class PostList(generic.ListView):
-    """ 
-    View for index.html displaying posts. 
+    """
+    View for index.html displaying posts.
     """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 6
-    
+
 
 class PostDetail(View):
-    """ 
-    View for individual post page 
+    """
+    View for individual post page
     """
 
     def get(self, request, slug, *args, **kwargs):
@@ -64,7 +63,7 @@ class PostDetail(View):
             comment.save()
         else:
             comment_form = CommentForm()
-            
+
         return render(
             request,
             "post_detail.html",
@@ -79,8 +78,8 @@ class PostDetail(View):
 
 
 class PostLike(View):
-    """ 
-    View to display likes to the user. 
+    """
+    View to display likes to the user.
     """
 
     def post(self, request, slug):
@@ -95,22 +94,24 @@ class PostLike(View):
 
 
 class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
-    """ 
-    View for creating a new post 
+    """
+    View for creating a new post
     """
     model = Post
     template_name = 'post_form.html'
     fields = ['title', 'content', 'featured_image', 'excerpt']
     success_url = reverse_lazy('home')
-    success_message = 'New post created successfully and awaiting authorisation'
+    success_message = ('New post created successfully'
+                       'and awaiting authorisation')
 
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
 
-class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, UpdateView):
-    """ 
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin,
+                     SuccessMessageMixin, UpdateView):
+    """
     View for updating/editing a post.
     """
     model = Post
@@ -130,9 +131,10 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
         return False
 
 
-class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView, SuccessMessageMixin):
-    """ 
-    View for deleting a post. 
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin,
+                     DeleteView, SuccessMessageMixin):
+    """
+    View for deleting a post.
     """
     model = Post
     template_name = 'post_confirm_delete.html'
