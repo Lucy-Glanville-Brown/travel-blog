@@ -18,9 +18,9 @@
                     <!-- The featured image URL goes in the src attribute -->
                     {% if "placeholder" in post.featured_image.url %}
                     <img src="https://res.cloudinary.com/dvyrsxq7k/image/upload/v1646681060/static/media/whitsundays_2_smohgy.jpg"
-                        width="100%" class="img-fluid">
+                        class="img-fluid">
                     {% else %}
-                    <img src="{{ post.featured_image.url }}" width="100%" class="img-fluid" alt="{{ post.title }}">
+                    <img src="{{ post.featured_image.url }}" class="img-fluid" alt="{{ post.title }}">
                     {% endif %}
                 </div>
             </div>
@@ -52,28 +52,28 @@
                         <div class="row">
                             <div class="col-1">
                                 <!-- The number of likes goes before the closing strong tag -->
-                                <strong>
-                                    {% if user.is_authenticated %}
-                                    <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
-                                        {% csrf_token %}
-                                        {% if liked %}
 
-                                        <button type="submit" name="blogpost_id" value="{{post.slug}}"
-                                            class="btn-like"><i class="fas fa-heart"></i></button>
+                                {% if user.is_authenticated %}
+                                <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                                    {% csrf_token %}
+                                    {% if liked %}
 
-                                        {% else %}
+                                    <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                            class="fas fa-heart"></i></button>
 
-                                        <button type="submit" name="blogpost_id" value="{{post.slug}}"
-                                            class="btn-like"><i class="far fa-heart"></i></button>
-
-                                        {% endif %}
-                                    </form>
                                     {% else %}
 
-                                    <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                    <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                            class="far fa-heart"></i></button>
+
                                     {% endif %}
-                                    <span class="text-secondary"> {{ post.number_of_likes }}</span>
-                                </strong>
+                                </form>
+                                {% else %}
+
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                {% endif %}
+                                <span class="text-secondary"> {{ post.number_of_likes }}</span>
+
                             </div>
                             <div class="col-1">
                                 {% with comments.count as total_comments %}
