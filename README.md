@@ -36,6 +36,7 @@ View the live project [here](https://wunderlust2022.herokuapp.com/)
 *  As a Site User I can edit comments on a post so that I can make corrections to my comments
 *  As a Site User I can update my profile so that other users can view my details
 
+![Travel Blog Kanban Board](https://user-images.githubusercontent.com/85178695/160198378-e2020da0-b249-4bdf-9bd8-fd35fdafbe39.png)
 
 ### Strategy
 
@@ -53,16 +54,37 @@ The wire frames were created using Balsamiq.
 #### Pixabay
 
 [Whitsunday Island]('https://pixabay.com/photos/whitsunday-island-great-barrier-reef-796006/')
+![whitsunday-island-796006_1920](https://user-images.githubusercontent.com/85178695/160196050-976051b0-2e47-4b6f-8dfa-fd63c07d600b.jpg)
+
 
 [White Temple]('https://pixabay.com/photos/chiang-rai-thailand-white-temple-2371951/')
+![chiang-rai-2371951_1920](https://user-images.githubusercontent.com/85178695/160196076-c7abd774-bdb2-4196-ba5f-c91bb5122d13.jpg)
+
 
 [Angkor Wat]('https://pixabay.com/photos/angkor-wat-water-temple-city-425689/')
 
+![angkor-wat-425689_1920](https://user-images.githubusercontent.com/85178695/160196135-08aeff39-ec00-4cd6-a83c-2e72a6920b8a.jpg)
+
+
 [Hoi Ann, Lanterns]('https://pixabay.com/photos/market-lamps-light-person-hoi-an-2494520/')
+![market-2494520_1920](https://user-images.githubusercontent.com/85178695/160196153-3d8d43ab-824f-42fc-9542-bd6a6561b5bd.jpg)
+
+
 
 #### Vecteezy
 
 [Ha Long Bay]('https://www.vecteezy.com/photo/2055163-coastal-rocks-and-blue-water')
+
+![vecteezy_coastal-rocks-and-blue-water_2055163](https://user-images.githubusercontent.com/85178695/160196191-cb64ca62-cd9c-4660-b2c6-9f78047c0542.jpg)
+
+#### My Photos
+Default Image
+
+![whitsundays_2](https://user-images.githubusercontent.com/85178695/160196259-aa4bda18-5ac3-4a6d-a72d-9f0b5b46b47e.jpg)
+
+Skydiving
+
+![Skydiving](https://user-images.githubusercontent.com/85178695/160196288-c86b4fe0-db2b-409b-b064-13874f849d4f.JPG)
 
 
 #### Colours
@@ -168,11 +190,13 @@ I also used colorspace to search for other shades that worked well with the Navb
 
 * When the User clicks on the Edit button they are taken to the form view so they can edit their post
 
-*****
+![edit_post](https://user-images.githubusercontent.com/85178695/160196516-674bce10-b232-4a74-bbaa-1a29dc616c31.png)
+
 
 * When the User clicks on the Delete button they are taken to another page to confirm deletion
 
-*****
+![delete_post](https://user-images.githubusercontent.com/85178695/160196571-a4ea24f9-ac64-4776-961a-aee35bd77c34.png)
+
 
 ##### Comments
 * Show the Author, Date Created and the Authors Comments
@@ -278,7 +302,8 @@ If the user is signed in they can intereact with the post by pressing the like b
 
 When the user has submitted a comment a message is displayed to say their comment is awaiting approval
 
-********
+![post_detail_comment_awaiting_approval](https://user-images.githubusercontent.com/85178695/160196721-c8c79923-d458-4093-861f-cf203cce559d.png)
+
 
 If the user is the author of the post they can choose to Edit or Delete the post
 
@@ -287,7 +312,8 @@ If the user is the author of the post they can choose to Edit or Delete the post
 
 When the user clicks on the Edit button they are redirected to the form view so they can edit the post
 
-********
+![edit_post](https://user-images.githubusercontent.com/85178695/160196766-7c90550f-13ec-45e0-b1d1-5a4b1a1730d1.png)
+
 
 When the user clicks on the Delete button they are redirected to another page to confirm the deletion
 
@@ -300,18 +326,43 @@ When the post has been deleted they are redirected to the homepage and a message
 ### Site Admin Panel
 
 As a Site Admin I can create draft posts so that I can finish writing the content later
+![draft_post_creation_1](https://user-images.githubusercontent.com/85178695/160196854-3abae30b-2de2-423c-b96a-e422adf2db17.png)
 
+![draft_post_creation_2](https://user-images.githubusercontent.com/85178695/160196878-e6ccd991-9f66-4cb0-84bc-a3446cbc3ce7.png)
+
+![draft_post_admin](https://user-images.githubusercontent.com/85178695/160196886-891a9003-c24d-4a2a-982f-10ef3573a651.png)
+
+![draft_post_published](https://user-images.githubusercontent.com/85178695/160196953-dedacd60-222f-4fe7-a742-e6802f14686d.png)
 
 As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
 
 
+
+
 As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+
+![admin_comments_approve](https://user-images.githubusercontent.com/85178695/160197206-3601c8fd-12f0-4f5b-a7b8-7df93383fd54.png)
+
+![admin_delete_comment](https://user-images.githubusercontent.com/85178695/160197277-712f5be9-16f0-4f35-b8bc-f75d20052fe9.png)
+
+![admin_delete_comment_confirmed](https://user-images.githubusercontent.com/85178695/160197285-3c93eced-94d5-413d-b78e-49e37b44f8cb.png)
 
 
 As a Site Admin I can edit posts so that I can make changes to the post
 
+![admin_update_post](https://user-images.githubusercontent.com/85178695/160197822-7a04f136-c450-4cf5-b275-c427e6e36825.png)
+
+![admin_update_post_confirm](https://user-images.githubusercontent.com/85178695/160197842-bf3e6c27-d7bf-49ae-a117-c57f0ce209a3.png)
+
 
 As a Site Admin I can delete posts so that I can remove them if I want to
+
+![delete_post_admin](https://user-images.githubusercontent.com/85178695/160197347-72d35cfc-0c90-4dd3-9ede-e813b882f37d.png)
+
+![delete_post_admin_confirm](https://user-images.githubusercontent.com/85178695/160197358-beaf5533-2cc3-47fb-aa28-207968c22b0b.png)
+
+![delete_post_admin_confirmed](https://user-images.githubusercontent.com/85178695/160197366-931a37a0-e699-4a69-882b-390d9bf72a9d.png)
+
 
 
 ### Bugs
@@ -320,11 +371,28 @@ As a Site Admin I can delete posts so that I can remove them if I want to
 
 * W3C Markup Validation
 
+![html](https://user-images.githubusercontent.com/85178695/160198004-944c0af7-565b-4b76-987a-c9026e0ebbd5.png)
+
+![html_post_detail](https://user-images.githubusercontent.com/85178695/160198055-4e108688-70c4-44ff-ba9c-b0272e5fc9ec.png)
+
+![html_post_detail_page_source](https://user-images.githubusercontent.com/85178695/160198062-757a5cd9-2f4a-4db2-8a21-da1552957bde.png)
+
+![html_post_detail_my_code](https://user-images.githubusercontent.com/85178695/160198065-25a21fbe-5059-491f-b9b7-366d78384b9f.png)
+
 * W3C CSS Validation
+
+![css_validator](https://user-images.githubusercontent.com/85178695/160197915-75f111b7-92c3-46c8-9cd9-4d5ea8172023.png)
+
 
 * Lighthouse
 
+![lighthouse](https://user-images.githubusercontent.com/85178695/160197933-2c26b47a-4899-4dbe-aada-e7ac6bb23024.png)
+
+
 * PEP8
+
+![pep8](https://user-images.githubusercontent.com/85178695/160197960-c74c5558-0229-4b59-8ab0-2352309fa0af.png)
+
 
 ## Deployment
 
