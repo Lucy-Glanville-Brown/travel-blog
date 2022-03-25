@@ -136,11 +136,17 @@ I decided to use ‘Pacifico’ for the Wunderlust branding and ‘Roboto’ and
 3. Javascript
 4. Python
 
-### Libraries
+### Libraries, Frameworks and Programmes Used 
 
 * Google Fonts
 * Font Awesome
 * Balsamiq
+* GitHub / GitPod
+* Heroku
+* Django
+* Bootstrap
+* Cloudinary
+* Summernote
 
 ## Features
 
@@ -454,5 +460,9 @@ How to run this project locally:
 
 
 ## Credits
+
+* Images were taken from Pixabay and Vecteezy
+* Icons were taken from Font Awesome
+* Code Institute for the creating the gitpod-full-template
 
 ## Acknowledgements
