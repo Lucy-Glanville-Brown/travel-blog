@@ -107,6 +107,60 @@ I also used colorspace to search for other shades that worked well with the Navb
 
 ### Existing Features
 
+#### Homepage
+* The homepage shows the Navbar, About Section, Posts and the Footer
+
+##### Navbar
+* The Navbar on loading shows Home, Register and Login
+
+* The Navbar when the user is logged in shows Home, Logout and New Post
+
+##### About Section
+* The about section explains what this site is for
+
+##### Posts
+* The homepage shows 6 posts with the option to go to the next page if there are more than 6 posts on the site
+
+##### Footer
+* The footer shows the site name/brand and links to social media platforms which all open in a new page
+
+#### Post Detail View
+
+##### Post Header
+* Shows the Post Title, Author and dated created/updated
+* Shows the Post Image
+
+##### Post Content
+* Shows the post content
+* Shows the number of likes for the post
+* Shows the number of comments for the post
+
+* If the User is the Author of the Post they have the option to Edit or Delete their post
+
+* When the User clicks on the Edit button they are taken to the form view so they can edit their post
+
+* When the User clicks on the Delete button they are taken to another page to confirm deletion
+
+##### Comments
+* Show the Author, Date Created and the Authors Comments
+* If the User is logged in they have the option to leave a comment
+* When the user submits a comment a message will appear advising them that their comment is awaiting approval
+
+#### New Post
+* Takes the user to a form for them to create their post
+* When the user submits their post they will get redirected to the homepage and a message will appear
+
+#### Register
+* When the user clicks on Register in the Navbar they are redirected to a sign up page where they can enter their details to create an account
+
+#### Login
+* When the user clicks on Login in the Navbar they are redirected to a sign in page where they can enter their account details
+* When the user has signed in they are redirected to the homepage
+
+#### Sign Out
+* When the user clicks on Sign Out in the Navbar they are redirected to a sign out page to confirm if they want to sign out
+* When the user confirms the sign out they will be redirected to the homepage
+
 ### Future Features
 
 ## Testing
