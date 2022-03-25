@@ -165,6 +165,40 @@ I also used colorspace to search for other shades that worked well with the Navb
 
 ## Testing
 
+I have manually tested this project by doing the following:
+* Run the code through the validators and confirmed there are no problems
+* Testing the site from my gitpod workspace and my deployed site through Heroku
+* I have also tested this site on my i-Phone, i-Pad and laptop
+
+When the site is loaded the Navbar displays Home, Register and Login. The About Section is displayed with a Welcome to Wunderlust message and the posts are displaying correctly
+
+When the user clicks on Register in the Navbar they are taken to a Sign Up page
+
+After the user has registered they are redirected to the homepage and a message appears to confirm successfully signed in
+
+When the user clicks on Log In in the Navbar they are taken to a Sign In page
+
+After the user has signed in they are redirected to the homepage and a message appears to confirm successfully signed in
+
+When the user clicks on Sign Out they are taken to a page to confirm sign out
+
+After the user has signed out they are redirected to the homepage and a message appears to confirm they have be signed out
+
+When the user clicks on a Post it redirects them to the posts detail page which displays the post content, likes and comments
+
+If the user is signed in they can intereact with the post by pressing the like button or comment on the post
+
+If the user is the author of the post they can choose to Edit or Delete the post
+
+When the user clicks on the Edit button they are redirected to the form view so they can edit the post
+
+When the user clicks on the Delete button they are redirected to another page to confirm the deletion
+
+As site admin/superuser I can log into the admin panel
+
+
+
+
 ### Bugs
 
 ### Validator Testing
