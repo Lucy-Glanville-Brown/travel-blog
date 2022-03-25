@@ -147,8 +147,8 @@ I also used colorspace to search for other shades that worked well with the Navb
 #### Post Detail View
 
 ##### Post Header
-* Shows the Post Title, Author and dated created/updated
-* Shows the Post Image
+* Shows the post title, author and date created/updated
+* Shows the post image
 
 ![post_detail_header](https://user-images.githubusercontent.com/85178695/160172792-bc9507a6-5fdc-46fc-87d9-e7465ae1a0e2.png)
 
@@ -168,7 +168,11 @@ I also used colorspace to search for other shades that worked well with the Navb
 
 * When the User clicks on the Edit button they are taken to the form view so they can edit their post
 
+*****
+
 * When the User clicks on the Delete button they are taken to another page to confirm deletion
+
+*****
 
 ##### Comments
 * Show the Author, Date Created and the Authors Comments
@@ -272,6 +276,9 @@ If the user is signed in they can intereact with the post by pressing the like b
 
 ![post_detail_leaving_comment](https://user-images.githubusercontent.com/85178695/160176579-4df6f160-746d-4a23-a3c0-fc74a38328c6.png)
 
+When the user has submitted a comment a message is displayed to say their comment is awaiting approval
+
+********
 
 If the user is the author of the post they can choose to Edit or Delete the post
 
@@ -280,16 +287,31 @@ If the user is the author of the post they can choose to Edit or Delete the post
 
 When the user clicks on the Edit button they are redirected to the form view so they can edit the post
 
+********
+
 When the user clicks on the Delete button they are redirected to another page to confirm the deletion
 
 ![delete_post](https://user-images.githubusercontent.com/85178695/160177196-c5f7550e-3d80-4b3c-a416-a5d805fd4523.png)
 
+When the post has been deleted they are redirected to the homepage and a message is displayed to confirm deletion
+
 ![post_deleted_message](https://user-images.githubusercontent.com/85178695/160177248-442a031d-0cdf-438c-b8e8-70aa682122f6.png)
 
+### Site Admin Panel
 
-As site admin/superuser I can log into the admin panel
+As a Site Admin I can create draft posts so that I can finish writing the content later
 
 
+As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
+
+
+As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+
+
+As a Site Admin I can edit posts so that I can make changes to the post
+
+
+As a Site Admin I can delete posts so that I can remove them if I want to
 
 
 ### Bugs
@@ -298,11 +320,37 @@ As site admin/superuser I can log into the admin panel
 
 * W3C Markup Validation
 
+* W3C CSS Validation
+
 * Lighthouse
 
 * PEP8
 
 ## Deployment
+
+### Deploying on Heroku
+
+To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+
+### Forking the Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+
+* Log into GitHub or create an account.
+* Locate the GitHub Repository.
+* At the top of the repository, on the right side of the page, select "Fork"
+* You should now have a copy of the original repository in your GitHub account.
+
+### Creating a Clone
+
+How to run this project locally:
+
+* Install the GitPod Browser Extension for Chrome.
+* After installation, restart the browser.
+* Log into GitHub or create an account.
+* Locate the GitHub Repository.
+* Click the green "GitPod" button in the top right corner of the repository. This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
+
 
 ## Credits
 
