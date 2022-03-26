@@ -9,7 +9,7 @@
                     {% csrf_token %}
                     <fieldset class="form-group">
                         <legend class="border-bottom mb-4">Blog Post</legend>
-                        {{ form|crispy }}
+                        {{ form | crispy | safe }}
                     </fieldset>
                     <div class="form-group">
                         <button class="btn btn-signup right" type="submit">Post</button>
