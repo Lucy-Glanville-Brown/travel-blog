@@ -408,7 +408,11 @@ As a Site Admin I can delete posts so that I can remove them if I want to
 
 * When the user submits a comment and the page reloads you have to scroll down to see the message "Your comment is awaiting approval"
 
+![post_detail_comment_awaiting_approval](https://user-images.githubusercontent.com/85178695/160236934-cd17eb0f-9c22-4cba-b8ee-4c691d5cd74c.png)
+
 * When the user edits a post the bootstrap class properties appear in the content box, this has also been flagged in the HTML validator testing for the post_detail page
+* 
+![edit_post_bug](https://user-images.githubusercontent.com/85178695/160236909-82ae03c3-8a4e-454a-88bc-aa9a43e48025.png)
 
 * I was having trouble getting the delete function to return to the homepage, I found the solution on Stackoverflow [here](https://stackoverflow.com/questions/35748145/return-and-link-to-homepage-django)
 
