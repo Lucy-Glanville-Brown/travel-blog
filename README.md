@@ -438,6 +438,31 @@ My code
 ### Deploying on Heroku
 
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+* Create the app in Heroku
+* Select "New" and "Create new app".
+* Name the new app and click "Create new app".
+* In "Settings", click "Reveal Config Vars" and input the folloing.
+    * CLOUDINARY_URL
+    * DATABASE_URL
+    * SECRET_KEY
+
+* Click on "Deploy" and select your deploy method and repository.
+* Click "Connect" on selected repository
+* Click "Deploy Branch" in the manual deploy section. -Heroku will now deploy the App.
+
+Development Environment
+* Create env.py and it needs to contain these variables:
+    * os.environ["DATABASE_URL"] = "postgres://....."
+    * os.environ["SECRET_KEY"] = "....."
+    * os.environ["CLOUDINARY_URL"] = "....."
+    * os.environ["DEVELOPMENT"] = "True"
+    * os.environ["CLOUDINARY_CLOUD_NAME"] = '.....'
+    * os.environ["CLOUDINARY_API_KEY"] = '.....'
+    * os.environ["CLOUDINARY_API_SECRET"] = '.....'
+
+* Create requirements.txt   
+>> `pip3 freeze --local > requirements.txt`
+* Create Procfile  
 
 ### Forking the Repository
 
