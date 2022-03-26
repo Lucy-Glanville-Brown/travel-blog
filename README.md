@@ -58,6 +58,33 @@ This site has been designed with simplicity in mind, each page only has key info
 ### Skeleton
 The wire frames were created using Balsamiq.
 
+Mobile View
+
+![mobile_wf_1](https://user-images.githubusercontent.com/85178695/160236729-c2012624-20bd-4426-a540-d6d2efeacd87.png)
+
+![mobile_wf_2](https://user-images.githubusercontent.com/85178695/160236733-67116f82-cc4f-4e02-ac28-f15683de9b85.png)
+
+![mobile_wf_3](https://user-images.githubusercontent.com/85178695/160236737-a7f17697-b76f-4cc3-bf58-d4a46e40e94b.png)
+
+
+Tablet View
+
+![tablet_wf_1](https://user-images.githubusercontent.com/85178695/160236744-fa5ff2e5-d95d-4a53-8859-778b6fc5422a.png)
+
+![tablet_wf_2](https://user-images.githubusercontent.com/85178695/160236747-cf162125-d6e3-46e8-ae74-3914ef96f702.png)
+
+![tablet_wf_3](https://user-images.githubusercontent.com/85178695/160236749-7e76c860-7c24-467c-8e0d-3b65f0af762b.png)
+
+
+Laptop View
+
+![laptop_wf_1](https://user-images.githubusercontent.com/85178695/160236754-ec689193-6328-4ac6-a29b-a37491cdc00f.png)
+
+![laptop_wf_2](https://user-images.githubusercontent.com/85178695/160236756-716a81ea-a808-4adc-9369-cbf1dab6d9d6.png)
+
+![laptop_wf_3](https://user-images.githubusercontent.com/85178695/160236760-4f690207-1805-4a20-b6d8-bf551e769c5d.png)
+
+
 ### Surface
 
 #### Images
