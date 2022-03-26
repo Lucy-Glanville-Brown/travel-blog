@@ -36,7 +36,7 @@ View the live project [here](https://wunderlust2022.herokuapp.com/)
 *  As a Site User I can edit comments on a post so that I can make corrections to my comments
 *  As a Site User I can update my profile so that other users can view my details
 
-I used GitHub Projects to create a Kanban board to manage the planning and implementation of the functionality I wanted to include in this project. Click [here]('https://github.com/Lucy-Glanville-Brown/travel-blog/projects?type=beta') to see my project board.
+I used GitHub Projects to create a Kanban board to manage the planning and implementation of the functionality I wanted to include in this project. Click [here](https://github.com/Lucy-Glanville-Brown/travel-blog/projects?type=beta) to see my project board.
 
 ![Travel Blog Kanban Board](https://user-images.githubusercontent.com/85178695/160198378-e2020da0-b249-4bdf-9bd8-fd35fdafbe39.png)
 
@@ -64,29 +64,29 @@ The wire frames were created using Balsamiq.
 
 #### Pixabay
 
-Whitsunday Island
+Whitsunday Island image can be found on Pixabay [here](https://pixabay.com/photos/whitsunday-island-great-barrier-reef-796006/)
 
 ![whitsunday-island-796006_1920](https://user-images.githubusercontent.com/85178695/160196050-976051b0-2e47-4b6f-8dfa-fd63c07d600b.jpg)
 
 
-White Temple
+White Temple image can be found on Pixabay [here](https://pixabay.com/photos/chiang-rai-thailand-white-temple-2371951/)
 
 ![chiang-rai-2371951_1920](https://user-images.githubusercontent.com/85178695/160196076-c7abd774-bdb2-4196-ba5f-c91bb5122d13.jpg)
 
 
-Angkor Wat
+Angkor Wat image can be found on Pixabay [here](https://pixabay.com/photos/angkor-wat-water-temple-city-425689/)
 
 ![angkor-wat-425689_1920](https://user-images.githubusercontent.com/85178695/160196135-08aeff39-ec00-4cd6-a83c-2e72a6920b8a.jpg)
 
 
-Hoi An Lanterns
+Hoi An Lanterns image can be found on Pixabay [here](https://pixabay.com/photos/market-lamps-light-person-hoi-an-2494520/)
 
 ![market-2494520_1920](https://user-images.githubusercontent.com/85178695/160196153-3d8d43ab-824f-42fc-9542-bd6a6561b5bd.jpg)
 
 
 #### Vecteezy
 
-Ha Long Bay
+Ha Long Bay image can be found on Vecteezy [here](https://www.vecteezy.com/photo/2055163-coastal-rocks-and-blue-water)
 
 ![vecteezy_coastal-rocks-and-blue-water_2055163](https://user-images.githubusercontent.com/85178695/160196191-cb64ca62-cd9c-4660-b2c6-9f78047c0542.jpg)
 
@@ -104,19 +104,19 @@ Skydiving
 
 #### Colours
 
-[Adobe Color Extract Theme]('https://color.adobe.com/create/image')
+[Adobe Color Extract Theme](https://color.adobe.com/create/image)
 
 The colours were chosen by using Adobe Color Extract Theme from an image of Whitsunday Island I found on Pixabay.
 
 ![adobe_color_theme_11](https://user-images.githubusercontent.com/85178695/160018401-68c53e47-940d-45bf-9bea-5e14c31f8d76.png)
 
-[Contrast Grid - Eightshapes.com]('https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23F2F2F2%0D%0A%23DDDDDD%0D%0A%23CCCCCC%0D%0A%23888888%0D%0A%23404040%2C%20Charcoal%0D%0A%23000000%2C%20Black%0D%0A%232F78C5%2C%20Effective%20on%20Extremes%0D%0A%230F60B6%2C%20Effective%20on%20Lights%0D%0A%23398EEA%2C%20Ineffective%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp')
+[Contrast Grid - Eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23F2F2F2%0D%0A%23DDDDDD%0D%0A%23CCCCCC%0D%0A%23888888%0D%0A%23404040%2C%20Charcoal%0D%0A%23000000%2C%20Black%0D%0A%232F78C5%2C%20Effective%20on%20Extremes%0D%0A%230F60B6%2C%20Effective%20on%20Lights%0D%0A%23398EEA%2C%20Ineffective%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp)
 
 Once the colours were chosen I used a contrast checker to decide which colour worked best for the Navbar and Footer with white text.
 
 ![color_theme_11](https://user-images.githubusercontent.com/85178695/160018447-fc0ad0c6-2f5c-4bd4-bf0a-125d547f998b.png)
 
-[MyColor.Space]('https://mycolor.space/')
+[MyColor.Space](https://mycolor.space/)
 
 I also used colorspace to search for other shades that worked well with the Navbar/Footer colour #07668C and decided to use colour #A2E5FF for the main body background colour.
 
@@ -398,14 +398,14 @@ As a Site Admin I can delete posts so that I can remove them if I want to
 
 * When the user edits a post the bootstrap class properties appear in the content box, this has also been flagged in the HTML validator testing for the post_detail page
 
-* I was having trouble getting the delete function to return to the homepage, I found the solution on Stackoverflow [here]('https://stackoverflow.com/questions/35748145/return-and-link-to-homepage-django')
+* I was having trouble getting the delete function to return to the homepage, I found the solution on Stackoverflow [here](https://stackoverflow.com/questions/35748145/return-and-link-to-homepage-django)
 
-* The delete success message was also not displaying and I found the solution on Stackoverflow [here]('https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown')
+* The delete success message was also not displaying and I found the solution on Stackoverflow [here](https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown)
 
 * When the user created a post the image upload function was not working, after speaking to Code Institute Tutor Support the solution was to include an enctype attribute in my form
 `<form method="POST" enctype="multipart/form-data">`
 
-* I was also having problems getting the slug field to pre-populate when the user created a post outside of the admin panel. I decided to remove the slug field from the create/update post view and have it pre-populate in the backend. The soultion was found on Learn Django [here]('https://learndjango.com/tutorials/django-slug-tutorial')
+* I was also having problems getting the slug field to pre-populate when the user created a post outside of the admin panel. I decided to remove the slug field from the create/update post view and have it pre-populate in the backend. The soultion was found on Learn Django [here](https://learndjango.com/tutorials/django-slug-tutorial)
 
 ### Validator Testing
 
