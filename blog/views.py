@@ -12,7 +12,8 @@ from django.contrib import messages
 
 class PostList(generic.ListView):
     """
-    View for index.html displaying posts.
+    View for index.html displaying posts, shows posts in descending order
+    and only shows 6 posts per page.
     """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
@@ -22,10 +23,14 @@ class PostList(generic.ListView):
 
 class PostDetail(View):
     """
-    View for individual post page
+    View for individual post page in post_detail.html
     """
-
+    
     def get(self, request, slug, *args, **kwargs):
+        """
+        Checks if the post is published, gets the slug for the post and also 
+        gets any comments and likes associated with the post.
+        """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -46,6 +51,10 @@ class PostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
+        """
+        Checks if the post is published, gets the slug for the post and then 
+        posts any comments and likes associated with the post.
+        """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -83,6 +92,10 @@ class PostLike(View):
     """
 
     def post(self, request, slug):
+        """
+        Gets the post slug, then checks if the post has already been
+        liked by the user
+        """
         post = get_object_or_404(Post, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
@@ -95,7 +108,7 @@ class PostLike(View):
 
 class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     """
-    View for creating a new post
+    View for creating a new post if the user is logged in
     """
     model = Post
     template_name = 'post_form.html'
@@ -112,7 +125,7 @@ class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin,
                      SuccessMessageMixin, UpdateView):
     """
-    View for updating/editing a post.
+    View for updating/editing a post is the user is the author of the post
     """
     model = Post
     template_name = 'post_form.html'
@@ -134,21 +147,22 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin,
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin,
                      DeleteView, SuccessMessageMixin):
     """
-    View for deleting a post.
+    View for deleting a post if the user is the author of the post
     """
     model = Post
     template_name = 'post_confirm_delete.html'
     success_url = reverse_lazy('home')
     success_message = 'Post has been deleted successfully'
 
-    """ function to check if the user is the post author """
+    
     def test_func(self):
+        """ function to check if the user is the post author """
         post = self.get_object()
         if self.request.user == post.author:
             return True
         return False
 
-    """ function to display the message after post deleted """
     def delete(self, request, *args, **kwargs):
+        """ function to display the message after post deleted """
         messages.success(self.request, self.success_message)
         return super(PostDeleteView, self).delete(request, *args, **kwargs)

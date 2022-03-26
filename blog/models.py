@@ -7,7 +7,10 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
-    """ Class for the Post model. """
+    """
+    Class for the Post model which is used when creating
+    and updating posts.
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -47,7 +50,8 @@ class Post(models.Model):
 
 class Comment(models.Model):
     """
-    Class for the comment model.
+    Class for the comment model which is used in the admin
+    panel and when a user comments on a post.
     """
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments')
