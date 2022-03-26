@@ -64,29 +64,29 @@ The wire frames were created using Balsamiq.
 
 #### Pixabay
 
-Whitsunday Island image can be found on Pixabay [here]('https://pixabay.com/photos/whitsunday-island-great-barrier-reef-796006/')
+Whitsunday Island
 
 ![whitsunday-island-796006_1920](https://user-images.githubusercontent.com/85178695/160196050-976051b0-2e47-4b6f-8dfa-fd63c07d600b.jpg)
 
 
-White Temple image can be found on Pixabay [here]('https://pixabay.com/photos/chiang-rai-thailand-white-temple-2371951/')
+White Temple
 
 ![chiang-rai-2371951_1920](https://user-images.githubusercontent.com/85178695/160196076-c7abd774-bdb2-4196-ba5f-c91bb5122d13.jpg)
 
 
-Angkor Wat image can be found on Pixabay [here]('https://pixabay.com/photos/angkor-wat-water-temple-city-425689/')
+Angkor Wat
 
 ![angkor-wat-425689_1920](https://user-images.githubusercontent.com/85178695/160196135-08aeff39-ec00-4cd6-a83c-2e72a6920b8a.jpg)
 
 
-Hoi An Lanterns image can be found on Pixabay [here]('https://pixabay.com/photos/market-lamps-light-person-hoi-an-2494520/')
+Hoi An Lanterns
 
 ![market-2494520_1920](https://user-images.githubusercontent.com/85178695/160196153-3d8d43ab-824f-42fc-9542-bd6a6561b5bd.jpg)
 
 
 #### Vecteezy
 
-Ha Long Bay image can be found on Vecteezy [here]('https://www.vecteezy.com/photo/2055163-coastal-rocks-and-blue-water')
+Ha Long Bay
 
 ![vecteezy_coastal-rocks-and-blue-water_2055163](https://user-images.githubusercontent.com/85178695/160196191-cb64ca62-cd9c-4660-b2c6-9f78047c0542.jpg)
 
@@ -398,6 +398,15 @@ As a Site Admin I can delete posts so that I can remove them if I want to
 
 * When the user edits a post the bootstrap class properties appear in the content box, this has also been flagged in the HTML validator testing for the post_detail page
 
+* I was having trouble getting the delete function to return to the homepage, I found the solution on Stackoverflow [here]('https://stackoverflow.com/questions/35748145/return-and-link-to-homepage-django')
+
+* The delete success message was also not displaying and I found the solution on Stackoverflow [here]('https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown')
+
+* When the user created a post the image upload function was not working, after speaking to Code Institute Tutor Support the solution was to include an enctype attribute in my form
+`<form method="POST" enctype="multipart/form-data">`
+
+* I was also having problems getting the slug field to pre-populate when the user created a post outside of the admin panel. I decided to remove the slug field from the create/update post view and have it pre-populate in the backend. The soultion was found on Learn Django [here]('https://learndjango.com/tutorials/django-slug-tutorial')
+
 ### Validator Testing
 
 * W3C Markup Validation
@@ -461,7 +470,7 @@ Development Environment
     * os.environ["CLOUDINARY_API_SECRET"] = '.....'
 
 * Create requirements.txt   
->> `pip3 freeze --local > requirements.txt`
+`pip3 freeze --local > requirements.txt`
 * Create Procfile  
 
 ### Forking the Repository
@@ -488,6 +497,6 @@ How to run this project locally:
 
 * Images were taken from Pixabay and Vecteezy
 * Icons were taken from Font Awesome
-* Code Institute for the creating the gitpod-full-template
+* Code Institute for the creating the gitpod-full-template and the I Think Therfore I Blog walkthrough project which this was based on
 
 ## Acknowledgements
