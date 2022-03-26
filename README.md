@@ -90,17 +90,12 @@ Ha Long Bay image can be found on Vecteezy [here](https://www.vecteezy.com/photo
 
 ![vecteezy_coastal-rocks-and-blue-water_2055163](https://user-images.githubusercontent.com/85178695/160196191-cb64ca62-cd9c-4660-b2c6-9f78047c0542.jpg)
 
-#### My Photos
-These are my own photographs taken whilst travelling.
+#### My Photo
+This is my own photograph taken whilst travelling.
 
 Default Image
 
 ![whitsundays_2](https://user-images.githubusercontent.com/85178695/160196259-aa4bda18-5ac3-4a6d-a72d-9f0b5b46b47e.jpg)
-
-Skydiving
-
-![Skydiving](https://user-images.githubusercontent.com/85178695/160196288-c86b4fe0-db2b-409b-b064-13874f849d4f.JPG)
-
 
 #### Colours
 
@@ -353,17 +348,8 @@ When the post has been deleted they are redirected to the homepage and a message
 ### Site Admin Panel
 
 As a Site Admin I can create draft posts so that I can finish writing the content later
-![draft_post_creation_1](https://user-images.githubusercontent.com/85178695/160196854-3abae30b-2de2-423c-b96a-e422adf2db17.png)
-
-![draft_post_creation_2](https://user-images.githubusercontent.com/85178695/160196878-e6ccd991-9f66-4cb0-84bc-a3446cbc3ce7.png)
 
 ![draft_post_admin](https://user-images.githubusercontent.com/85178695/160196886-891a9003-c24d-4a2a-982f-10ef3573a651.png)
-
-![draft_post_published](https://user-images.githubusercontent.com/85178695/160196953-dedacd60-222f-4fe7-a742-e6802f14686d.png)
-
-As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
-
-
 
 
 As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
@@ -389,7 +375,6 @@ As a Site Admin I can delete posts so that I can remove them if I want to
 ![delete_post_admin_confirm](https://user-images.githubusercontent.com/85178695/160197358-beaf5533-2cc3-47fb-aa28-207968c22b0b.png)
 
 ![delete_post_admin_confirmed](https://user-images.githubusercontent.com/85178695/160197366-931a37a0-e699-4a69-882b-390d9bf72a9d.png)
-
 
 
 ### Bugs
@@ -498,5 +483,8 @@ How to run this project locally:
 * Images were taken from Pixabay and Vecteezy
 * Icons were taken from Font Awesome
 * Code Institute for the creating the gitpod-full-template and the I Think Therfore I Blog walkthrough project which this was based on
+* All content in the pages has been written by me
 
 ## Acknowledgements
+
+I would like to thank my course mentor Daisy Mc Girr for her support and guidance throughout the project and Gemma and Scott from the Code Institute tutor support who helped me with my image upload issue.
